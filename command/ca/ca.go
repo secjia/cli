@@ -5,7 +5,6 @@ import (
 
 	"github.com/smallstep/cli/command/ca/admin"
 	"github.com/smallstep/cli/command/ca/provisioner"
-	"github.com/smallstep/cli/command/ca/provisionerbeta"
 	"github.com/urfave/cli"
 	"go.step.sm/cli-utils/command"
 )
@@ -166,7 +165,6 @@ func BetaCommand() cli.Command {
 commands may change, disappear, or be promoted to a different subcommand in the future.`,
 		Subcommands: cli.Commands{
 			admin.Command(),
-			provisionerbeta.Command(),
 			acme.Command(),
 		},
 	}
